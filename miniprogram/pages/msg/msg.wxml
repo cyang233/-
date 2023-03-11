@@ -1,0 +1,8 @@
+<!--miniprogram/pages/msg/msg.wxml-->
+<view class="message" wx:if="{{img!=''}}">
+		<view class="con">
+			<image class="img" show-menu-by-longpress="true" mode="aspectFit" src="{{img}}"></image>
+			<text>如果人人都献出一点爱~</text>
+		</view>
+		<tabbar active='2'></tabbar>
+</view>

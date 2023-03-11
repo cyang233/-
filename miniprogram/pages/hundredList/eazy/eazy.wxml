@@ -1,0 +1,14 @@
+<!--简繁转换-->
+<view class="pagebox">
+  <view class="content">
+    <view class="con">
+      <van-field value="{{ word }}" clearable border="{{ false }}" placeholder="请输入要转换的简体" bind:change="onChange" />
+    </view>
+    <view  class="con result" selectable='true'>
+     {{result}}
+    </view>
+    <view class="btn" bindtap="searchWord">
+      转换
+    </view>
+  </view>
+</view>

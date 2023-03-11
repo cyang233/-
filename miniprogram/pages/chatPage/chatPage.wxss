@@ -1,0 +1,108 @@
+/* pages/chatPage/chatPage.wxss */
+.pagebpx {
+  width: 100%;
+}
+
+.content-box {
+  width: 100%;
+  position: relative;
+}
+
+.beijing {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 92vh;
+}
+
+.scrollitem {
+  box-sizing: border-box;
+  padding-top: 60rpx;
+}
+
+.text {
+  box-sizing: border-box;
+  padding: 16rpx 24rpx;
+  max-width: 490rpx;
+  /* max-height: 122rpx; */
+  border-radius: 4rpx 4rpx 32rpx 4rpx;
+  line-height: 44rpx;
+  background-image: linear-gradient(#4568DC, #B06AB3);
+  color: #fff;
+  letter-spacing: 4rpx;
+}
+
+.text1 {
+  line-height: 2;
+  border-radius: 4rpx 4rpx 4rpx 32rpx;
+}
+
+.right,.left{
+  margin-top: 54rpx;
+}
+
+.headimg {
+  width: 93rpx;
+  height: 93rpx;
+  border-radius: 93rpx;
+  overflow: hidden;
+}
+
+/* 文本框 */
+.input-box {
+  display: flex;
+  height: 8vh;
+}
+
+.input-left {
+  width: 80%;
+}
+
+.input-right {
+  width: 20%;
+  line-height: 8vh;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 4rpx;
+  background-color: #40E0D0;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+/* 弹框 */
+.van-popup--center {
+  width: 80%;
+  border-radius: 12rpx;
+  top: 40% !important;
+}
+.popcontent{
+  width:100%;
+  box-sizing: border-box;
+  padding: 24rpx 32rpx;
+  padding-bottom: 60rpx;
+}
+.qrcode{
+  width: 100%;
+}
+.headinfo{
+  display:flex;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+.headinfo image{
+  width: 160rpx;
+  height: 160rpx;
+  margin-right: 20rpx;
+  border-radius: 16rpx;
+}
+.colortext{
+  margin-top: 8rpx;
+  color: #3F7C6F;
+}

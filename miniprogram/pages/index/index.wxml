@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="pagebox">
+	<view class="item" wx:for="{{itemList}}" bindtap="toDetail" data-value="{{item.value}}">
+			{{item.title}}
+	</view>
+		<!-- <tabbar active='0'></tabbar> -->
+</view>

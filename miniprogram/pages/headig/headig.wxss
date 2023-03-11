@@ -1,0 +1,40 @@
+/* miniprogram/pages/history/history.wxss */
+/* pages/audio/aduio.wxss */
+.headImg{
+  width: 100%;
+  height: 100vh;
+  background-color: cyan;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.headImg .type{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.headImg .type button{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24rpx;
+  color: blueviolet;
+  background-color: cornflowerblue;
+  border-radius: 20rpx;
+}
+.headImg .content{
+  margin-top: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600rpx;
+  height: 600rpx;
+  border: dotted 2rpx blueviolet;
+}
+.headImg .content .img{
+  width: 550rpx;
+  height: 550rpx;
+}

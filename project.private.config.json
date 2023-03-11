@@ -1,0 +1,83 @@
+{
+  "setting": {},
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "name": "聊天页",
+          "pathName": "pages/chatPage/chatPage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "百次列表",
+          "pathName": "pages/hundredList/hundredList",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "网络流行语",
+          "pathName": "pages/hundredList/networkWord/networkWord",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "简繁转换",
+          "pathName": "pages/hundredList/eazy/eazy",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "菜谱查询",
+          "pathName": "pages/hundredList/menu/menu",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "姓氏起源",
+          "pathName": "pages/hundredList/nameHistory/nameHistory",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "星座运势",
+          "pathName": "pages/hundredList/constellation/constellation",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "故事大全",
+          "pathName": "pages/hundredList/story/story",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "猜灯谜",
+          "pathName": "pages/hundredList/lanternRiddles/lanternRiddles",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "舔狗日记",
+          "pathName": "pages/hundredList/dogDiary/dogDiary",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html"
+}

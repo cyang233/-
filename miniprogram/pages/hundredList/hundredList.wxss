@@ -1,0 +1,54 @@
+/* pages/hundredList/hundredList.wxss */
+.pagebox{
+  width: 100%;
+}
+.list{
+  box-sizing: border-box;
+  padding: 24rpx 32rpx;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.imgList{
+  width: 30%;
+  height: 330rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+.list image{
+  width: 100%;
+  height: 330rpx;
+}
+.title{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0;
+  height: 330rpx;
+  text-align: center;
+  width: 30rpx;
+  display: flex;
+  align-items: center;
+  color:#FFA17F;
+}
+.showTitle{
+  opacity: 1;
+  transition:all 10s;
+}
+
+.transform{
+  transform: rotateY(-180deg);
+  transition-duration:2s;
+}
+.transform1{
+  transform: rotateY(0deg);
+  transition-duration:2s;
+}
+.transformWidth1{
+  transition-duration:1s;
+}

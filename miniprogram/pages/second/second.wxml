@@ -1,0 +1,13 @@
+<!--miniprogram/pages/second/second.wxml-->
+<view class="rich">
+	<web-view wx-if="{{path}}" src="{{path}}"></web-view>
+	<view class="con">
+		<view class="lis" wx:for="{{list}}">
+			<view class="li-t">
+				<view class="li-tl" bindtap="toDetail"><text>{{item.item}}</text> ({{item.link_url}})</view>
+				<view class="li-tr">{{item.times}}</view>
+			</view>
+		</view>
+	</view>
+	<tabbar active='1'></tabbar>
+</view>

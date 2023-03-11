@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/second/second",
+    "pages/msg/msg",
+    "pages/components/tabbar/tabbar",
+    "pages/headig/headig",
+    "pages/chatPage/chatPage",
+    "pages/hundredList/hundredList",
+    "pages/hundredList/networkWord/networkWord",
+    "pages/hundredList/eazy/eazy",
+    "pages/hundredList/menu/menu",
+    "pages/hundredList/nameHistory/nameHistory",
+    "pages/hundredList/constellation/constellation",
+    "pages/hundredList/story/story",
+    "pages/hundredList/lanternRiddles/lanternRiddles",
+    "pages/hundredList/dogDiary/dogDiary"
+  ],
+  "usingComponents": {
+    "van-button": "vant-weapp/button/index",
+    "van-field": "vant-weapp/field/index",
+    "van-radio": "vant-weapp/radio/index",
+    "van-radio-group": "vant-weapp/radio-group/index",
+    "van-datetime-picker": "vant-weapp/datetime-picker/index",
+    "van-tabbar": "vant-weapp/tabbar/index",
+    "van-tabbar-item": "vant-weapp/tabbar-item/index",
+    "van-icon": "vant-weapp/icon/index",
+    "van-image": "vant-weapp/image/index",
+    "van-dropdown-menu": "vant-weapp/dropdown-menu/index",
+    "van-dropdown-item": "vant-weapp/dropdown-item/index",
+    "van-circle": "vant-weapp/circle/index",
+    "van-popup": "vant-weapp/popup/index"
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#fff",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "text": "笑话",
+        "pagePath": "pages/second/second"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

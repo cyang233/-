@@ -1,0 +1,85 @@
+/* pages/mine/books/books.wxss */
+.rich{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rich .addbook{
+  box-sizing: border-box;
+  padding: 24rpx 12rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.rich .addbook .lis{
+  display: flex;
+  align-items: center;
+}
+.rich .addbook .lis text{
+  font-size: 26rpx;
+}
+.rich .addbook .lis input{
+  box-sizing: border-box;
+  width: 120rpx;
+  padding-left: 12rpx;
+  outline: none;
+  border-radius: 10rpx;
+  background-color: #ccc;
+  font-size: 24rpx;
+}
+.rich .addbook .lis button{
+  width: 104rpx;
+  font-size: 24rpx;
+  background-color:#1AA034;
+  color: #fff;
+}
+
+
+.rich .books{
+  box-sizing: border-box;
+  padding: 24rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.rich .books .li{
+  margin-top: 20rpx;
+  box-sizing: border-box;
+  padding: 20rpx 10rpx;
+  box-shadow: 2rpx 2rpx 4rpx 4rpx rgba(204,204,204,.4);
+  font-size: 24rpx;
+}
+.rich .books .li-t{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rich .books .li .left{
+  font-size: 28rpx;
+  color: #f30;
+}
+.rich .books .li .right{
+  font-size: 24rpx;
+  color: #CCCCCC;
+}
+.rich .books .li-b{
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rich .books .li-b .line{
+  width: 96%;
+  height: 2rpx;
+  background-color: #ccc;
+}
+.rich .books .li-b .word{
+  margin-top: 20rpx;
+  width: 100%;
+  font-size: 26rpx;
+}

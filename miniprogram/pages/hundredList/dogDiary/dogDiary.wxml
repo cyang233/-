@@ -1,0 +1,7 @@
+<!--舔狗日记-->
+<view class="pagebox">
+  <view class="content">
+    {{result}}
+  </view>
+  <view class="btn" bindtap="showDiary">下一篇</view>
+</view>

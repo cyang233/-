@@ -1,0 +1,49 @@
+<view class="mine">
+	<view class="info">
+		<view class="btn">
+			<contact-button class="talk"></contact-button>
+			<van-image width="210rpx" height="210rpx" round="true" src="{{imgsrc}}" />
+			<text>{{user}}</text>
+		</view>
+	</view>
+	<!--内容-->
+	<view class="content">
+		<view class="li" bindtap="qqinfo">
+			<view class="li-l">
+				<van-icon name="search" color="#0FAA70" size="38rpx" />
+				<text>QQ信息查询</text>
+			</view>
+			<view class="li-r">
+				<van-icon name="arrow" />
+			</view>
+		</view>
+		<view class="li" bindtap="weather">
+			<view class="li-l">
+				<van-icon name="smile-o" color="#0FAA70" size="38rpx" />
+				<text>天气预报</text>
+			</view>
+			<view class="li-r">
+				<van-icon name="arrow" />
+			</view>
+		</view>
+		<view class="li">
+			<view class="li-l" bindtap="history">
+				<van-icon name="user-circle-o" color="#0FAA70" size="38rpx" />
+				<text>换个头像</text>
+			</view>
+			<view class="li-r">
+				<van-icon name="arrow" />
+			</view>
+		</view>
+		<view class="li" bindtap="talking">
+			<view class="li-l">
+				<van-icon name="photo-o" color="#0FAA70" size="38rpx" />
+				<text>换个壁纸</text>
+			</view>
+			<view class="li-r">
+				<van-icon name="arrow" />
+			</view>
+		</view>
+	</view>
+	<tabbar active='3'></tabbar>
+</view>

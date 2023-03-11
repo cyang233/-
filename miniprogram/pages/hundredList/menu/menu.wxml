@@ -1,0 +1,35 @@
+<!--菜谱查询-->
+<view class="pagebox">
+  <!-- 搜索 -->
+  <view class="search">
+    <view class="searchbox">
+      <van-cell-group>
+        <van-field value="{{ word }}" clearable border="{{ false }}" placeholder="请输入菜谱名或原料名" bind:change="onChange" />
+      </van-cell-group>
+    </view>
+    <view class="searchbtn" bindtap="searchWord">搜索</view>
+  </view>
+    <!-- 结果 -->
+    <view class="result"> 
+    <view hidden="{{result.cp_name === ''}}">
+      <view class="item">
+        <text class="title">菜名：</text> {{result.cp_name}}
+      </view>
+      <view class="item">
+        <text class="title">评价：</text>{{result.texing}}
+      </view>
+      <view class="item">
+        <text class="title"> 原料：</text>{{result.yuanliao}}
+      </view>
+      <view class="item"> 
+        <text class="title"> 调料：</text>{{result.tiaoliao}}
+      </view>
+      <view class="item">
+        <text class="title">做法：</text>{{result.zuofa}}
+      </view>
+      <view class="item">
+        <text class="title"> 提示：</text>{{result.tishi}}
+      </view>
+    </view>
+    </view>
+</view>

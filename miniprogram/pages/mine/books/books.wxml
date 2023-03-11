@@ -1,0 +1,30 @@
+<!--miniprogram/pages/second/second.wxml-->
+<view class="rich">
+	<view class="addbook">
+		<view class="lis">
+			<text>昵称：</text>
+			<input type="twxt" value="{{name}}" bindinput="getName" maxlength="9"></input>
+		</view>
+		<view class="lis">
+			<text>留言：</text>
+			<input type="twxt" value="{{word}}" bindinput="getWord" maxlength="300"></input>
+		</view>
+		<view class="lis">
+		<button bindtap="AddList">添加</button>
+		</view>
+	</view>
+	<view class="books">
+		<view class="li" wx:for="{{list}}">
+			<view class="li-t">
+				<view class="left">{{item.nickname}}</view>
+				<view class="right">{{item.year}}.{{item.month}}.{{item.day}}</view>
+			</view>
+			<view class="li-b">
+				<view class="line"></view>
+				<view class="word">
+					{{item.msg}}
+				</view>
+				</view>
+		</view>
+	</view>
+</view>

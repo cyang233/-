@@ -1,0 +1,11 @@
+<view class="headImg">
+  <view class="type">
+    <button bindtap="getImg" data-tp="男">男</button>
+    <button bindtap="getImg" data-tp="女">女</button>
+    <button bindtap="getImg" data-tp="动漫">动漫</button>
+    <button bindtap="getImg" data-tp="呆萌酱">呆萌</button>
+  </view>
+  <view class="content">
+    <image mode="aspectFit" src="{{img}}" class="img" show-menu-by-longpress="true"></image>
+  </view>
+</view>

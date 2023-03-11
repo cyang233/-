@@ -1,0 +1,7 @@
+/* pages/common/tabbar/tabbar.wxss */
+.tabbar{
+  z-index: 999 !important;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}

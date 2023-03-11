@@ -1,0 +1,15 @@
+<!--故事大全-->
+<view class="pagebox">
+  <view class="btn" bindtap="showStory">
+    讲个故事！
+  </view>
+<!-- 结果 -->
+<view class="result">
+  <view class="title">
+  {{result.title}}
+  </view>  
+  <view class="con">
+    <rich-text nodes="{{result.content}}"></rich-text>
+  </view>
+</view>
+</view>

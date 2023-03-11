@@ -1,0 +1,9 @@
+<!-- 百次功能列表 -->
+<view class="pagebox">
+  <view class="list">
+    <view class="imgList" wx:for="{{list}}" wx:for-item="it" >
+      <image src="{{it.img}}" class="{{index == active && transformClass ? 'transform' :''}}" bindtap="clickImg" data-index="{{index}}" />
+      <view class="title {{index == active && transformClass ? 'showTitle' :''}}" bindtap="clickImg" data-index="{{index}}">{{it.title}}</view>
+    </view>
+  </view>
+</view>

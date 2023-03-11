@@ -1,0 +1,51 @@
+<!--pages/chatPage/chatPage.wxml-->
+<view class="pagebox">
+  <view class="contentbox">
+    <image class="beijing" src="../../images/chatbgi.jpg"></image>
+    <scroll-view class="scrollitem" scroll-y="true" style="height: 92vh;" scroll-top="{{scrollTop}}">
+      <van-transition name="fade-left" duration="{{ { enter: 500 } }}">
+        <view class="left flex-start">
+          <van-image round width="93rpx" height="93rpx" src="../../images/lefthead.jpg" bindtap="showInfo" />
+          <view class="text font-size-md m-l-sm bg-color-f">哈喽呀</view>
+        </view>
+      </van-transition>
+      <view class="item" wx:for="{{list}}" wx:for-item="item" wx:for-index="index">
+        <van-transition name="fade-right" duration="{{ { enter: 500 } }}" wx:if="{{item.question != null}}">
+          <view class="right flex-start flex-end">
+            <view class="text text1 font-size-md m-r-sm bg-color-f">{{item.question}}</view>
+            <open-data type="userAvatarUrl" class="headimg"></open-data>
+          </view>
+        </van-transition>
+        <van-transition name="fade-left" duration="{{ { enter: 500 } }}" wx:if="{{item.reply != ''}}">
+          <view class="left flex-start">
+            <van-image round width="93rpx" height="93rpx" src="../../images/lefthead.jpg" bindtap="showInfo" />
+            <view class="text font-size-md m-l-sm bg-color-f">{{item.reply}}</view>
+          </view>
+        </van-transition>
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 文本框 -->
+  <view class="input-box">
+    <view class="input-left">
+      <van-field value="{{ msg }}" bind:change="onChange" placeholder="请输入" border="{{ false }}" />
+    </view>
+    <view class="input-right" bindtap="sendMsg">发送</view>
+  </view>
+
+  <!-- 头像弹框 -->
+  <van-popup show="{{ show }}" bind:close="onClose">
+    <view class="popcontent">
+      <view class="headinfo">
+        <image src="../../images/wxheadimg.jpg"></image>
+        <view class="inforight">
+          <view style="font-weight: bold;color:#7BBE9B">奥特阳
+            <van-icon name="manager" />
+          </view>
+          <view class="colortext">河南 <text>安阳</text></view>
+        </view>
+      </view>
+      <image mode="aspectFill" class="qrcode" src="../../images/erweima.jpg" show-menu-by-longpress = "true"></image>
+    </view>
+  </van-popup>
+</view>

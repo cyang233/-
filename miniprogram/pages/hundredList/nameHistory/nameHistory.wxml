@@ -1,0 +1,16 @@
+<!--菜谱查询-->
+<view class="pagebox">
+  <!-- 搜索 -->
+  <view class="search">
+    <view class="searchbox">
+      <van-cell-group>
+        <van-field value="{{ word }}" clearable border="{{ false }}" placeholder="请输入姓氏" bind:change="onChange" />
+      </van-cell-group>
+    </view>
+    <view class="searchbtn" bindtap="searchWord">搜索</view>
+  </view>
+    <!-- 结果 -->
+    <view class="result"> 
+      <rich-text nodes="{{result}}"></rich-text>
+    </view>
+</view>

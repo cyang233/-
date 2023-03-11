@@ -1,0 +1,19 @@
+<!--猜灯谜-->
+<view class="pagebox">
+  <view class="btn" bindtap="showStory">
+    来个灯谜
+  </view>
+<!-- 结果 -->
+<view class="result">
+  <view class="title"> {{result.content}}</view>  
+  <view class="answer" hidden="{{flag}}" bindtap="showAnswer">
+    查看<text>答案</text>
+  </view>
+  <view class="con" hidden="{{!flag}}">
+   答案：{{result.answer}}
+   <view style="margin-top:20rpx">
+     解释：{{result.reason}}
+   </view>
+  </view>
+</view>
+</view>
